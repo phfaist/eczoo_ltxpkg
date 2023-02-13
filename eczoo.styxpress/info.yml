@@ -1,0 +1,18 @@
+# This is a YAML file.
+
+bundle:
+  version: v0.0.1
+  package_name: eczoo
+  # output_dir: .  # relative to folder that contains the XXX.styxpress folder
+
+embed:
+  - embed_engine: 'styxpress.embed.sty'
+    config:
+      styname: eczoolink.sty
+
+  - embed_engine: 'styxpress.embed.pdf'
+    config:
+      pdfname: 'eczoo_icon_ascii.pdf'
+      #pdfname: 'eczoo_icon.pdf'
+      cmdname: 'eczooIcon'
+

@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+
+\usepackage{eczoo}
+
+\usepackage[pdfborder={0 0 0},colorlinks=true,allcolors=blue]{hyperref}
+
+\begin{document}
+\title{Hello}
+\maketitle
+
+% Hi - \includegraphics[height={1.2\fontcharht\font`X}]{_styxpress_tmp_eczoo_icon_ascii.pdf} - Hi.
+
+% Hi - \eczooIcon[height={10pt}] - Hi.
+
+% Yo - \href{https://errorcorrectionzoo.org/}{\eczooIcon[height={1.2\fontcharht\font`X}]XXX} - Yo.
+
+% \edef\x{\the\eczooIconRawMargin\space \the\eczooIconRawMargin\space
+%   \the\eczooIconRawMargin\space \the\eczooIconRawMargin}
+% \edef\xx{trim=\x,clip,height={20pt}}
+% Hi - \texttt{\x} - \expandafter\includegraphics\expandafter[\xx]{_styxpress_tmp_eczoo_icon_ascii.pdf} - Hi.
+
+
+Link: \eczoo{good_qldpc}.  The link can include the name like
+\eczoo[The surface code]{surface}.
+
+Link to home page is \eczoo{}
+
+\end{document}

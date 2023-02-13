@@ -1,0 +1,60 @@
+\ProvidesPackage{eczoolink}
+%
+\newdimen\eczooIconRawWidth
+\eczooIconRawWidth=15.4bp\relax
+\newdimen\eczooIconRawHeight
+\eczooIconRawHeight=15.4bp\relax
+% \newdimen\eczooIconRawMargin
+% \eczooIconRawMargin=0.6bp\relax
+%
+\def\@EczooIconSetDefaults{%
+  \def\eczooIconScale{1.3}%
+  \def\eczooIconBaseHeight{\protect\fontcharht\protect\font`X}%
+  \def\eczooIconTrimMargins{%
+    % \the\dimexpr\eczooIconScale\eczooIconRawMargin\relax\space
+    % \the\dimexpr\eczooIconScale\eczooIconRawMargin\relax\space
+    % \the\dimexpr\eczooIconScale\eczooIconRawMargin\relax\space
+    % \the\dimexpr\eczooIconScale\eczooIconRawMargin\relax
+    1bp 1bp 1bp 1bp
+  }%
+}
+% 
+\def\eczoo@IconSetGraphicsOptions{%
+  \begingroup
+    \let\protect\noexpand
+    \xdef\eczoo@GraphicsOptions{%
+      trim=\eczooIconTrimMargins,%
+      clip=false,%
+      height=\eczooIconScale\eczooIconBaseHeight
+    }%
+  \endgroup
+}
+%
+\def\EczooIconSetBaseHeight#1{%
+  \def\eczooIconBaseHeight{#1}%
+  \eczoo@IconSetGraphicsOptions
+}
+\def\EczooIconSetDefaults{%
+  \@EczooIconSetDefaults
+  \eczoo@IconSetGraphicsOptions
+}
+\def\EczooIconSetScale#1{%
+  \def\eczooIconScale{#1}%
+  \eczoo@IconSetGraphicsOptions
+}
+\EczooIconSetDefaults
+%
+\def\eczoo@useicon{%
+  \expandafter\eczooIcon\expandafter[\eczoo@GraphicsOptions]}
+%
+\def\eczoo@prependName#1{%
+  \if\relax\detokenize{#1}\relax\else #1~\fi
+}
+
+\newcommand\eczoo[2][]{%
+  \if\relax\detokenize{#2}\relax
+    \href{https://errorcorrectionzoo.org/}{\eczoo@prependName{#1}\eczoo@useicon}%
+  \else
+    \href{https://errorcorrectionzoo.org/c/#2}{\eczoo@prependName{#1}\eczoo@useicon}%
+  \fi
+}

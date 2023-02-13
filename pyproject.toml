@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "eczoo-ltxpkg"
+version = "0.1.0"
+description = "---"
+authors = ["Philippe Faist"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+styxpress = {git = "https://github.com/phfaist/styxpress.git"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

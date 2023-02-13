@@ -1,0 +1,12 @@
+*~
+.DS_Store
+
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+
+testuse.pdf
+
+_styxpress_tmp_eczoo_icon_ascii.pdf
