@@ -6,7 +6,8 @@ from your papers?  Here's the package that enables you to do so easily.
 
 ## Quick Instructions:
 
-1. Drop the `eczoo.sty` file on its own next to your manuscript;
+1. Drop the [`eczoo.sty`](https://raw.githubusercontent.com/phfaist/eczoo_ltxpkg/main/eczoo.sty)
+file on its own next to your manuscript;
 
 2. Include the package as usual:
 
