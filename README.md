@@ -7,11 +7,11 @@ from your papers?  Here's the package that enables you to do so easily.
 ## Quick Instructions:
 
 1. Drop the [`eczoo.sty`](https://raw.githubusercontent.com/phfaist/eczoo_ltxpkg/main/eczoo.sty)
-file on its own next to your manuscript;
+file on its own next to your manuscript source file;
 
 2. Include the package as usual:
 
-    \usepackage{eczoo}
+        \usepackage{eczoo}
     
 3. Link to a code page with `\eczoo{surface}` or `\eczoo[Surface code]{surface}`.
 
