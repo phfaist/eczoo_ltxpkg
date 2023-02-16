@@ -54,7 +54,7 @@ PyYAML = "^5.4.1"
 type = "git"
 url = "https://github.com/phfaist/styxpress.git"
 reference = "HEAD"
-resolved_reference = "3d85e0b9dded6b9d336684759f8576887e12cb53"
+resolved_reference = "5b3f10e20d7018872061d3124857caf7bccfe66d"
 
 [metadata]
 lock-version = "1.1"
