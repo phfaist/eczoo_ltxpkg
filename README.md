@@ -37,3 +37,6 @@ file on its own next to your manuscript source file;
   
 - `\EczooIconSetDefaults` — reset icon sizing options to the original defaults.
 
+- `\eczoohref[text]{code_id}` — same as `\eczoo`, but does not display the Error
+  Correction Zoo icon.  If no text is provided, the text “The Error Correction
+  Zoo” is typeset as the content of the link.
